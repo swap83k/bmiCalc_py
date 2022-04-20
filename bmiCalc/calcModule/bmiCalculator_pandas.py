@@ -31,8 +31,6 @@ def main(params):
 
     json_name = params.filename  
 
-    #json_name = 'PatientData.json'
-
     df_iter = pd.read_json(json_name)
 
     df_iter["BMI"] = (df_iter.WeightKg.div(df_iter.HeightCm.div(100).pow(2)))
@@ -48,9 +46,7 @@ def main(params):
     doctest.testmod()    
 
 if __name__ == '__main__':
-    #import doctest
-    #doctest.testmod(name='get_analysis_from_BMI', verbose=True)
-    
+       
     parser = argparse.ArgumentParser(description='BMI analysis from JSON data')
 
     parser.add_argument('--filename', required=True, help='source file')
