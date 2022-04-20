@@ -1,0 +1,9 @@
+LICENSE.txt
+pyproject.toml
+setup.cfg
+bmiCalc.egg-info/PKG-INFO
+bmiCalc.egg-info/SOURCES.txt
+bmiCalc.egg-info/dependency_links.txt
+bmiCalc.egg-info/top_level.txt
+calcModule/__init__.py
+calcModule/bmiCalculator_pandas.py
